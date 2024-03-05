@@ -46,6 +46,7 @@ def handleClient(connectionSocket, address):
         if not data:
             break
         try:
+            # prøver at lave data om til et JSON-objekt
             data = json.loads(data)
             switch_case(data, connectionSocket)
         except json.JSONDecodeError:
