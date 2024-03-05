@@ -42,17 +42,3 @@ json_request = build_json_request(command, num1, num2)
 
 # Sender JSON-anmodningen til serveren
 response_json = send_command(json_request, serverName, serverPort)
-
-# Lukker klientens socket efter brug
-#clientSocket.close()
-
-
-
-#def send_command(command, serverName, serverPort):
- #   clientSocket = socket(AF_INET, SOCK_STREAM)
-  ## clientSocket.send(command.encode())
-    #response = clientSocket.recv(1024).decode()
-    #response_json = json.loads(response)  # Convert response to JSON
-    #print('From Server:', response_json)
-    #clientSocket.close()
-    #return response_json
